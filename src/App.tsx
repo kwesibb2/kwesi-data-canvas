@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/your-repo-name' : ''}>
+      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/kwesi-data-canvas' : ''}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
